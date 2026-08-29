@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VPN Files - Zenix VPN Hub</title>
+
+    <meta
+        name="description"
+        content="Browse VPN configuration files on Zenix VPN Hub."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="login.html">
+    Login
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="vpn-files.html">
+        VPN Files
+    </a>
+
+    <a href="servers.html">
+        Servers
+    </a>
+
+    <a href="tools.html">
+        Tools
+    </a>
+
+    <a href="tutorials.html">
+        Tutorials
+    </a>
+
+    <a href="login.html">
+        Login
+    </a>
+
+    <a href="register.html">
+        Create Account
+    </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="hero-badge">
+                    ⚡ ZENIX VPN HUB
+                </span>
+
+                <h1>
+                    VPN Configuration Files
+                </h1>
+
+                <p>
+                    Browse available configuration resources
+                    by application, protocol and country.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH + FILTERS -->
+
+        <section class="files-section">
+
+            <div class="container">
+
+                <div class="file-controls">
+
+                    <input
+                        type="search"
+                        id="fileSearch"
+                        placeholder="Search VPN files..."
+                    >
+
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="udp">
+                            UDP Custom
+                        </option>
+
+                        <option value="http">
+                            HTTP Custom
+                        </option>
+
+                        <option value="v2ray">
+                            V2Ray
+                        </option>
+
+                        <option value="wireguard">
+                            WireGuard
+                        </option>
+
+                        <option value="openvpn">
+                            OpenVPN
+                        </option>
+
+                        <option value="ssh">
+                            SSH
+                        </option>
+
+                        <option value="slowdns">
+                            SlowDNS
+                        </option>
+
+                    </select>
+
+
+                    <select id="sortFiles">
+
+                        <option value="latest">
+                            Latest
+                        </option>
+
+                        <option value="popular">
+                            Most Downloaded
+                        </option>
+
+                        <option value="name">
+                            Name
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FILE COUNT -->
+
+                <div class="results-bar">
+
+                    <strong id="resultsCount">
+                        6 VPN files
+                    </strong>
+
+                    <span>
+                        Demo listings
+                    </span>
+
+                </div>
+
+
+                <!-- FILE GRID -->
+
+                <div
+                    class="file-grid"
+                    id="fileGrid"
+                >
+
+
+                    <!-- FILE 1 -->
+
+                    <article
+                        class="file-card"
+                        data-category="udp"
+                        data-name="Zimbabwe UDP Starter"
+                        data-downloads="1250"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                ⚡
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            UDP CUSTOM
+                        </span>
+
+                        <h2>
+                            Zimbabwe UDP Starter
+                        </h2>
+
+                        <p>
+                            Sample UDP configuration
+                            for demonstration purposes.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Zimbabwe
+                            </span>
+
+                            <span>
+                                📅 7 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                1,250 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="Zimbabwe UDP Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FILE 2 -->
+
+                    <article
+                        class="file-card"
+                        data-category="http"
+                        data-name="HTTP Custom Starter"
+                        data-downloads="980"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                🌐
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            HTTP CUSTOM
+                        </span>
+
+                        <h2>
+                            HTTP Custom Starter
+                        </h2>
+
+                        <p>
+                            Sample HTTP Custom resource
+                            for the Zenix demo platform.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Global
+                            </span>
+
+                            <span>
+                                📅 7 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                980 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="HTTP Custom Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FILE 3 -->
+
+                    <article
+                        class="file-card"
+                        data-category="v2ray"
+                        data-name="V2Ray Starter"
+                        data-downloads="760"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                🔐
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            V2RAY
+                        </span>
+
+                        <h2>
+                            V2Ray Starter
+                        </h2>
+
+                        <p>
+                            Sample V2Ray configuration
+                            listing for testing the interface.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Global
+                            </span>
+
+                            <span>
+                                📅 30 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                760 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="V2Ray Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FILE 4 -->
+
+                    <article
+                        class="file-card"
+                        data-category="wireguard"
+                        data-name="WireGuard Starter"
+                        data-downloads="640"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                🛡️
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            WIREGUARD
+                        </span>
+
+                        <h2>
+                            WireGuard Starter
+                        </h2>
+
+                        <p>
+                            Sample WireGuard configuration
+                            for the demo environment.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Global
+                            </span>
+
+                            <span>
+                                📅 30 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                640 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="WireGuard Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FILE 5 -->
+
+                    <article
+                        class="file-card"
+                        data-category="ssh"
+                        data-name="SSH Starter"
+                        data-downloads="520"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                🔑
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            SSH
+                        </span>
+
+                        <h2>
+                            SSH Starter
+                        </h2>
+
+                        <p>
+                            Sample SSH resource for
+                            testing the Zenix file system.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Global
+                            </span>
+
+                            <span>
+                                📅 7 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                520 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="SSH Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FILE 6 -->
+
+                    <article
+                        class="file-card"
+                        data-category="slowdns"
+                        data-name="SlowDNS Starter"
+                        data-downloads="410"
+                    >
+
+                        <div class="file-card-top">
+
+                            <span class="file-icon">
+                                📡
+                            </span>
+
+                            <span class="file-status">
+                                Demo
+                            </span>
+
+                        </div>
+
+                        <span class="file-category">
+                            SLOWDNS
+                        </span>
+
+                        <h2>
+                            SlowDNS Starter
+                        </h2>
+
+                        <p>
+                            Sample SlowDNS resource for
+                            the Zenix demonstration site.
+                        </p>
+
+                        <div class="file-details">
+
+                            <span>
+                                📦 Demo
+                            </span>
+
+                            <span>
+                                🌍 Global
+                            </span>
+
+                            <span>
+                                📅 7 Days
+                            </span>
+
+                        </div>
+
+                        <div class="file-footer">
+
+                            <span>
+                                410 downloads
+                            </span>
+
+                            <button
+                                class="download-button"
+                                type="button"
+                                data-file="SlowDNS Starter"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+
+                <div
+                    id="noResults"
+                    class="no-results"
+                    hidden
+                >
+                    <h3>
+                        No VPN files found
+                    </h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+                ZENIX <span>VPN HUB</span>
+            </div>
+
+            <p>
+                © 2026 Zenix VPN Hub. All rights reserved.
+            </p>
+
+            <p class="footer-note">
+                Demo configuration listings only.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
